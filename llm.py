@@ -1,6 +1,8 @@
 import requests
 import json
 
+from rag import rag
+
 url = "http://localhost:11434/api/generate"
 
 
@@ -24,4 +26,4 @@ def llm_invoke(prompt_string):
 
 
 if __name__ == '__main__':
-    llm_invoke("hello, world")
+    rag()
